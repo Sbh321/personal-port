@@ -200,12 +200,23 @@
       }
     </script>
 
+    <!-- Sociair Chat -->
+    <script
+      src="https://chat-website.sociair.io/profile/inject.js?host=https://qa.sociair.io"
+      data-domain="42"
+    ></script>
+
+    <!-- Crisp -->
     <script type="text/javascript">
       window.$crisp = [];
       window.CRISP_WEBSITE_ID = "9b8edf63-eb91-4312-a8b8-9168b4529373";
+
+      // Set position to left before loading the script
+      window.CRISP_POSITION = "left"; // "right" is default
+
       (function () {
-        d = document;
-        s = d.createElement("script");
+        var d = document;
+        var s = d.createElement("script");
         s.src = "https://client.crisp.chat/l.js";
         s.async = 1;
         d.getElementsByTagName("head")[0].appendChild(s);
